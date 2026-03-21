@@ -1,12 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-<h2><a rel=""  href ="">Personal_Portfolio</a></h2>
-<p><a rel="" href="https://lakshy-bharadwaj-portfolio.netlify.app/">View Live Demo</p>
-</body>
-</html> -->
 # 🚀 Personal Portfolio Website
 Welcome to my professional portfolio! This project is a comprehensive showcase of my journey as a developer, featuring my skills, internship experiences, and technical projects.
 
