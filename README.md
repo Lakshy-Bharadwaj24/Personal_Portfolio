@@ -7,36 +7,13 @@
 <p><a rel="" href="https://lakshy-bharadwaj-portfolio.netlify.app/">View Live Demo</p>
 </body>
 </html> -->
-🚀 Personal Portfolio – Lakshy Bharadwaj
-Speciality: A professional, responsive, and high-performance digital resume designed to showcase full-stack development skills and internship projects.
+# 🚀 Personal Portfolio Website
+Welcome to my professional portfolio! This project is a comprehensive showcase of my journey as a developer, featuring my skills, internship experiences, and technical projects.
 
-✨ Key Features
-Modern UI/UX: Clean design with a focus on professional branding and easy navigation.
-
-Responsive Layout: Optimized for all devices (Mobile, Tablet, and Desktop) using pure CSS.
-
-Dark/Light Mode: Integrated theme toggle for an enhanced user viewing experience.
-
-Interactive Sections: Dynamic "About Me," "Experience," and "Featured Projects" sections.
-
-🛠 Use Case
-Helpful for recruiters and organizations like Bireena InfoTech to assess my technical expertise, project history, and professional growth in real-time.
-
-💻 Technologies
-Frontend: HTML5, CSS3 (Flexbox & Grid).
-
-Deployment: Hosted on Netlify with continuous synchronization from GitHub.
-
-Branding: Professional headshots generated using advanced AI tools.
-
-🔗 Demo
-Live Link: View My Portfolio
-
-📂 Project Structure
-index.html – Main structure and content of the portfolio.
-
-style.css – Custom styling, animations, and responsive media queries.
-
-Lakshy_Resume.pdf – Professional resume for download.
-
-images/ – Assets including profile pictures and project thumbnails.
+---
+###  Personal Portfolio (Internship Task)
+*Speciality:* A fully responsive, professional digital resume built for Bireena InfoTech to demonstrate core frontend development mastery.
+* *Key Features:* Clean UI/UX, mobile-first responsive design, interactive project section, and a functional contact form.
+* *Use Case:* Serves as a central hub for recruiters to verify my technical background and professional growth.
+* *Technologies:* HTML5, CSS3, Flexbox, and Grid.
+* *Demo:* [View Live Demo](https://lakshy-bharadwaj-portfolio.netlify.app/)
