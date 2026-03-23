@@ -11,6 +11,7 @@
     --input-bg: #16213e;
     --menu-text: #cbd5e1;
     --menu-bg-mobile: #ffffff;
+    --main-color: #ffcc00; /* Ye line add kar di hai */
 }
 
 /* Light Mode Logic using :has() */
@@ -124,7 +125,88 @@ body:has(#dark-mode-toggle:not(:checked)) .about-wrapper {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
 }
+/* Experience */
 
+/* --- Professional Experience Section --- */
+.experience {
+    padding: 10rem 9% 2rem;
+    background: var(--bg-color);
+}
+
+.exp-container {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+}
+
+/* Vertical Line (Timeline Effect) */
+.exp-container::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--main-color); /* Aapka yellow color */
+}
+
+.exp-card {
+    position: relative;
+    padding-left: 60px;
+    transition: 0.4s ease;
+}
+
+/* Timeline Dots */
+.exp-card::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--main-color);
+    border-radius: 50%;
+    border: 4px solid var(--bg-color);
+    z-index: 1;
+}
+
+.exp-header h3 {
+    font-size: 2.2rem;
+    color: var(--text-color);
+}
+
+.company {
+    font-size: 1.6rem;
+    color: var(--main-color); /* Bireena InfoTech highlight hoga */
+    font-weight: 600;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.exp-card ul {
+    list-style: none;
+}
+
+.exp-card ul li {
+    font-size: 1.6rem;
+    color: var(--para-color);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Bullet points icons ke liye */
+.exp-card ul li::before {
+    content: '▹';
+    color: var(--main-color);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.exp-card:hover {
+    transform: translateX(10px);
+}
 
 
 
@@ -197,5 +279,72 @@ footer { text-align: center; padding: 3rem; background: var(--nav-bg); font-size
     
     .skills-tags {
         justify-content: center;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .exp-container::before {
+        left: 15px;
+    }
+    .exp-card {
+        padding-left: 45px;
+    }
+    .exp-card::before {
+        left: 6px;
+    }
+}
+
+
+
+/* new add */
+/* --- Professional Alert Styles --- */
+.professional-alert {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #1e293b; /* Dark Blue matching your theme */
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border-left: 5px solid #ffcc00; /* Yellow accent */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    animation: slideInLeft 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.6rem;
+}
+
+.alert-content i {
+    color: #ffcc00;
+    font-size: 2.2rem;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.alert-hide {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 0.5s ease;
+}
+
+/* Mobile responsive alert */
+@media (max-width: 768px) {
+    .professional-alert {
+        top: 20px;
+        right: 10px;
+        left: 10px;
+        padding: 12px 20px;
     }
 }
